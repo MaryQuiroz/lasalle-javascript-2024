@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/submit_registration" method="post">
+    <h1>Formulario de registro</h1>
+    <hr>
+    <label for="email">Enter your email</label> 
+    <input type="email" name="email" id="email" required> 
+        <br>
+    <label for="birthdate">Enter your birthdate</label> 
+    <input type="date" name="birthdate" id="birthdate" required> 
+        <br>
+    <label for="gender">Select your gender</label> 
+    <select name="gender" id="gender" required>
+    <option value="">Male</option>
+    <option value="female">Female</option>
+    <option value="x">x</option>
+</select>
+        <br>
+    <label for="color">Select you favourite color</label>
+    <input type="color" name="color" id="color" value="#FF0000" > 
+    <br>
+    <label for="music_genre">favorite music genre:</label>
+        <select id="music_genre" name="music_genre">
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="hiphop">Hip-Hop</option>
+            <option value="jazz">Jazz</option>
+            <option value="classical">Clásica</option>
+            <option value="electronic">Electrónica</option>
+            <option value="reggaeton">Reggaetón</option>
+            <option value="salsa">Salsa</option>
+        </select>
+        <br>
+    the level of music is <output name="result" for="volum">8</output>
+    <br>
+    <input type="range" id="volum" name="volum" min="1" max="10" value="8"
+    oninput="result.value = volum.value" >
+    <br>
+    <label for="terms">
+        <input type="checkbox" id="terms" name="terms" required>
+        I accept the conditions (required)
+    </label>
+    <br>
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>

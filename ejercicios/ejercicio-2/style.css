@@ -1,0 +1,14 @@
+*{
+  color: blue;  
+}
+
+.green {
+    color: green;
+}
+
+div {
+    font-size: 1.5em;
+}
+[lang="es"] {
+    color: black;
+}
