@@ -3,6 +3,7 @@
 Repositorio para el módulo de Javascript del curso fronted de La Salle
 
 ## Contenidos 
+### 28 de junio
 - execució
 - console.log()
 - variables -> tipos de datos
